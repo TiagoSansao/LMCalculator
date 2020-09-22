@@ -1,5 +1,5 @@
 # LORDS MOBILE CALCULATOR
-** MAKING EVERYONE'S LIFE EASIER**
+**MAKING EVERYONE'S LIFE EASIER**
 
-> ** Dependencie **
+> **Dependencies**
 * React.js
