@@ -49,6 +49,7 @@ class App extends React.Component { // 5, 10, 15, 30, 60, 3h, 8h, 15h, 24h, 3d, 
   }
 
   changeValue = (event) => {
+    if (event.target.value.length >= 8) return
     this.setState({ [event.target.id]: event.target.value})
   }
 
@@ -56,18 +57,18 @@ class App extends React.Component { // 5, 10, 15, 30, 60, 3h, 8h, 15h, 24h, 3d, 
     return (
       <section id="calculator">  
         <section id="speed-up">
-          <div className="speedup-row"> <div className="time-box">5m</div> <input type="number" className="quantity-input" value={this.state._5m} id="_5m" onChange={this.changeValue} placeholder="0"/></div>
-          <div className="speedup-row"> <div className="time-box">10m</div> <input type="number" className="quantity-input" value={this.state._10m} id="_10m" onChange={this.changeValue} placeholder="0"/> </div>
-          <div className="speedup-row"> <div className="time-box">15m</div> <input type="number" className="quantity-input" value={this.state._15m} id="_15m" onChange={this.changeValue} placeholder="0"/> </div>
-          <div className="speedup-row"> <div className="time-box">30m</div> <input type="number" className="quantity-input" value={this.state._30m} id="_30m" onChange={this.changeValue} placeholder="0"/> </div>
-          <div className="speedup-row"> <div className="time-box">60m</div> <input type="number" className="quantity-input" value={this.state._60m} id="_60m" onChange={this.changeValue} placeholder="0"/> </div>
-          <div className="speedup-row"> <div className="time-box">3h</div> <input type="number" className="quantity-input" value={this.state._3h} id="_3h" onChange={this.changeValue} placeholder="0"/> </div>
-          <div className="speedup-row"> <div className="time-box">8h</div> <input type="number" className="quantity-input" value={this.state._8h} id="_8h" onChange={this.changeValue} placeholder="0"/> </div>
-          <div className="speedup-row"> <div className="time-box">15h</div> <input type="number" className="quantity-input" value={this.state._15h} id="_15h" onChange={this.changeValue} placeholder="0"/> </div>
-          <div className="speedup-row"> <div className="time-box">24h</div> <input type="number" className="quantity-input" value={this.state._24h} id="_24h" onChange={this.changeValue} placeholder="0"/> </div>
-          <div className="speedup-row"> <div className="time-box">3d</div> <input type="number" className="quantity-input" value={this.state._3d} id="_3d" onChange={this.changeValue} placeholder="0"/> </div>
-          <div className="speedup-row"> <div className="time-box">7d</div> <input type="number" className="quantity-input" value={this.state._7d} id="_7d" onChange={this.changeValue} placeholder="0"/> </div>
-          <div className="speedup-row"> <div className="time-box">30d</div> <input type="number" className="quantity-input" value={this.state._30d} id="_30d" onChange={this.changeValue} placeholder="0"/> </div>
+          <div className="speedup-row"> <div className="time-box">5m</div> <input type="number" className="quantity-input" value={this.state._5m} id="_5m" onChange={this.changeValue} placeholder="0" /></div>
+          <div className="speedup-row"> <div className="time-box">10m</div> <input type="number" className="quantity-input" value={this.state._10m} id="_10m" onChange={this.changeValue} placeholder="0" /> </div>
+          <div className="speedup-row"> <div className="time-box">15m</div> <input type="number" className="quantity-input" value={this.state._15m} id="_15m" onChange={this.changeValue} placeholder="0" /> </div>
+          <div className="speedup-row"> <div className="time-box">30m</div> <input type="number" className="quantity-input" value={this.state._30m} id="_30m" onChange={this.changeValue} placeholder="0" /> </div>
+          <div className="speedup-row"> <div className="time-box">60m</div> <input type="number" className="quantity-input" value={this.state._60m} id="_60m" onChange={this.changeValue} placeholder="0" /> </div>
+          <div className="speedup-row"> <div className="time-box">3h</div> <input type="number" className="quantity-input" value={this.state._3h} id="_3h" onChange={this.changeValue} placeholder="0" /> </div>
+          <div className="speedup-row"> <div className="time-box">8h</div> <input type="number" className="quantity-input" value={this.state._8h} id="_8h" onChange={this.changeValue} placeholder="0 "/> </div>
+          <div className="speedup-row"> <div className="time-box">15h</div> <input type="number" className="quantity-input" value={this.state._15h} id="_15h" onChange={this.changeValue} placeholder="0" /> </div>
+          <div className="speedup-row"> <div className="time-box">24h</div> <input type="number" className="quantity-input" value={this.state._24h} id="_24h" onChange={this.changeValue} placeholder="0" /> </div>
+          <div className="speedup-row"> <div className="time-box">3d</div> <input type="number" className="quantity-input" value={this.state._3d} id="_3d" onChange={this.changeValue} placeholder="0" /> </div>
+          <div className="speedup-row"> <div className="time-box">7d</div> <input type="number" className="quantity-input" value={this.state._7d} id="_7d" onChange={this.changeValue} placeholder="0" /> </div>
+          <div className="speedup-row"> <div className="time-box">30d</div> <input type="number" className="quantity-input" value={this.state._30d} id="_30d" onChange={this.changeValue} placeholder="0" /> </div>
         </section>
         <section id="results">
           <h2>Total</h2> <span>{this.getTotal()}</span>
