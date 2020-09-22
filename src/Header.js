@@ -5,7 +5,8 @@ class Header extends React.Component {
     render() {
         return (
             <header>
-                <h1>Lords Mobile - Calculadora</h1>
+                <h1>Lords Mobile</h1> 
+                <h2> Calculadora </h2>
             </header>
         )
     }
