@@ -1,0 +1,9 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-color: #34495e;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,15 @@
+footer {
+    width: 100%;
+    background-color: #2c3e50;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #f1c40f;
+    font-family: 'Ranchers', cursive;
+    text-align: center;
+    color: #2ecc71;
+    text-shadow: 1px 1px 1px black;
+    order: 3;
+}
