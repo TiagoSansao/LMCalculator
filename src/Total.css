@@ -1,0 +1,95 @@
+section#results {
+    border-top: 1px solid #f1c40f;
+    font-family: 'Ranchers', cursive;
+    text-align: center;
+    padding: 0px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+    padding: 5px;
+    padding-bottom: 15px;
+  }
+  
+section#results h1 {
+    margin-bottom: 0px;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #8e44ad;
+}
+  
+section#results p {
+    font-size: 20px;
+    margin-top: 0px;
+    color: #ecf0f1;
+}
+
+input#saveButton {
+    width: 150px;
+    margin-top: 10px;
+    height: 35px;
+    text-transform: uppercase;
+    font-family: 'Ranchers', cursive;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #e67e22;
+    color: #ecf0f1;
+    text-shadow: 1px 1px 1px black;
+    background-color: #2ecc71;
+    transition: 0.5s;
+    outline: none;
+}
+
+input#saveButton:hover { 
+    background-color: #27ae60;
+    border: 2px solid #d35400;
+    cursor: pointer;
+}
+
+/* */
+
+section#saved-registry {
+    border-top: 1px solid #f1c40f;
+    font-family: 'Ranchers', cursive;
+    text-align: center;
+    padding: 0px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+    position: relative;
+    padding: 5px;
+    padding-bottom: 15px;
+    display: block;
+}
+section#saved-registry ol {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+}
+section#saved-registry ol > li {
+    margin-left: 80px;
+    color: white;
+}
+
+input#deleteButton {
+    width: 200px;
+    margin-top: 10px;
+    height: 35px;
+    text-transform: uppercase;
+    font-family: 'Ranchers', cursive;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #e67e22;
+    color: #ecf0f1;
+    text-shadow: 1px 1px 1px black;
+    background-color: #c9200d;
+    transition: 0.5s;
+    outline: none;
+}
+
+input#deleteButton:hover { 
+    background-color: #990f00;
+    border: 2px solid #d35400;
+    cursor: pointer;
+}

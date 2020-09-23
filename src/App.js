@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Total from './Total';
 
 class App extends React.Component { // 5, 10, 15, 30, 60, 3h, 8h, 15h, 24h, 3d, 7d, 30d,
   constructor() {
@@ -70,9 +71,7 @@ class App extends React.Component { // 5, 10, 15, 30, 60, 3h, 8h, 15h, 24h, 3d, 
           <div className="speedup-row"> <div className="time-box">7d</div> <input type="number" className="quantity-input" value={this.state._7d} id="_7d" onChange={this.changeValue} placeholder="0" /> </div>
           <div className="speedup-row"> <div className="time-box">30d</div> <input type="number" className="quantity-input" value={this.state._30d} id="_30d" onChange={this.changeValue} placeholder="0" /> </div>
         </section>
-        <section id="results">
-          <h2>Total</h2> <span>{this.getTotal()}</span>
-        </section>
+        <Total total={this.getTotal()} />
       </section>
     )
   }

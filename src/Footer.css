@@ -1,7 +1,8 @@
 footer {
     width: 100%;
     background-color: #2c3e50;
-    height: 50px;
+    min-height: 50px;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -12,4 +13,5 @@ footer {
     color: #2ecc71;
     text-shadow: 1px 1px 1px black;
     order: 3;
+    box-shadow: 0 50vh 0 50vh #2c3e50;;
 }

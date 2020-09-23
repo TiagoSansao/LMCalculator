@@ -7,11 +7,11 @@ import Footer from './Footer';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Header />
-    <App />
-    <Footer />
-  </React.StrictMode>,
+    <div id="full-screen">
+      <Header />
+      <App />
+      <Footer />
+    </div>,
   document.getElementById('root')
 );
 
