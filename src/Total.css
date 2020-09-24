@@ -22,6 +22,21 @@ section#results p {
     color: #ecf0f1;
 }
 
+select.speed-type {
+    margin-top: 15px;
+    outline: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;   
+    background-color: #3498db;
+    font-family: 'Ranchers', cursive;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+    color: #ecf0f1;
+    text-shadow: 1px 1px 1px black;
+}
+
 input#saveButton {
     width: 150px;
     margin-top: 10px;
@@ -34,7 +49,7 @@ input#saveButton {
     border: 2px solid #e67e22;
     color: #ecf0f1;
     text-shadow: 1px 1px 1px black;
-    background-color: #2ecc71;
+    background-color: #27b462;
     transition: 0.5s;
     outline: none;
 }
@@ -50,25 +65,40 @@ input#saveButton:hover {
 section#saved-registry {
     border-top: 1px solid #f1c40f;
     font-family: 'Ranchers', cursive;
-    text-align: center;
     padding: 0px;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px black;
-    position: relative;
     padding: 5px;
     padding-bottom: 15px;
-    display: block;
+    text-align: center;
 }
-section#saved-registry ol {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: start;
+
+section#saved-registry table {
+    width: 100%;
 }
-section#saved-registry ol > li {
-    margin-left: 80px;
+
+section#saved-registry tbody {
+    display: inline-flexbox;
+    padding: 5px;
+    width: 100%;
+}
+
+section#saved-registry table caption {
+    text-align: center;
+    text-transform: uppercase;
+    color: #2ecc71;
+    font-weight: 1000;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px black;
+}
+section#saved-registry th {
+    color: #d35400;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+section#saved-registry td {
     color: white;
+    text-shadow: 1px 1px 1px black;
 }
 
 input#deleteButton {
