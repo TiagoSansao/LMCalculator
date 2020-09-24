@@ -1,0 +1,8 @@
+{
+  "short_name": "LM-Calculadora",
+  "name": "Calculadora para Lords Mobile",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#3498db",
+  "background_color": "#ffffff"
+}
