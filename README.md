@@ -3,7 +3,7 @@
 
 > **PREVIEW**
 
-![](/github_images/main_screen.png)
+![](/github_images/main_screen.png) <br/>
 ![](/github_images/registrys.png)
 
 > **FEATURES**
